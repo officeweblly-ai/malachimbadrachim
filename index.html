@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800;900&family=Assistant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=20260827-4">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
   <div class="curtain curtain-bottom"></div>
   <div class="preloader-inner">
     <div class="road-wrap"><img class="intro-car" src="assets/car.png" alt=""><div class="road"></div><div class="road-dashes"></div></div>
-    <img class="intro-logo" src="assets/logo.png" alt="מלאכים בדרכים">
+    <span class="intro-logo-wrap"><img class="intro-logo" src="assets/logo.png" alt="מלאכים בדרכים"></span>
     <p class="intro-tag">מכל הלב · בכל דרך</p>
   </div>
 </div>
@@ -33,7 +33,7 @@
     <a class="brand" href="index.html"><img src="assets/logo.png" alt="מלאכים בדרכים"></a>
     <div class="header-actions">
       <nav class="desktop-nav"><a class="nav-link is-active" href="index.html">בית</a><a class="nav-link" href="about.html">מי אנחנו</a><a class="nav-link" href="services.html">השירותים</a><a class="nav-link" href="branches.html">סניפים</a><a class="nav-link" href="memorial.html">הנצחה</a><a class="nav-link" href="volunteer.html">התנדבות</a><a class="nav-link" href="donate.html">תרומה</a><a class="nav-link" href="contact.html">צור קשר</a></nav>
-      <a class="btn btn-navy" href="tel:*8237">חייגו *8237</a>
+      <a class="btn btn-navy" href="tel:*8237">חייגו 8237*סס</a>
       <button class="burger" id="burger" aria-label="תפריט" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -42,7 +42,7 @@
 <main>
 
 <section class="hero">
-  <div class="container hero-grid solo">
+  <div class="container hero-grid">
     <div class="hero-copy reveal">
       <span class="pill-light">עמותה התנדבותית · פריסה ארצית</span>
       <h1>נתקעתם עם הרכב?<br>אנחנו כבר בדרך אליכם</h1>
@@ -56,6 +56,9 @@
       </div>
       <dl class="hero-stats"><div><dt class="counter">12,400+</dt><dd>קריאות סיוע שטופלו</dd></div><div><dt class="counter">1,000+</dt><dd>מתנדבים בפריסה ארצית</dd></div><div><dt>24/6</dt><dd>מוקד חירום פעיל</dd></div></dl>
     </div>
+    <figure class="hero-art reveal" aria-label="פריסת מתנדבי מלאכים בדרכים ברחבי ישראל">
+      <img src="assets/hero-3d.png" alt="מפת ישראל מאוירת עם מתנדבים ורכבי סיוע ברחבי הארץ">
+    </figure>
   </div>
   <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 90V26C300 78 640 4 940 24 1160 39 1310 74 1440 56V90Z"/></svg>
 </section>
@@ -63,7 +66,7 @@
 <section class="container float-cards">
   <article class="card tilt reveal">
     <span class="pill">סיפורי מלאכים</span>
-    <p class="quote">„בשתיים בלילה, בגשם, עם שני ילדים ברכב – הוא הגיע, החליף גלגל ולא הסכים לקבל שקל."</p>
+    <blockquote class="quote quote-accent">בשתיים בלילה, בגשם, עם שני ילדים ברכב. הוא הגיע, החליף גלגל ולא הסכים לקבל שקל.</blockquote>
     <p class="muted">רחלי, בית שמש</p>
     <a class="link" href="about.html">עוד סיפורים מהשטח ←</a>
   </article>
@@ -83,7 +86,12 @@
   </article>
 </section>
 
-<section class="ticker"><div class="ticker-track"><span>• פנצ'ר בכביש 6: מתנדב הגיע תוך 8 דקות</span><span>• חילוץ ילדה שננעלה ברכב · פתח תקווה</span><span>• טעינת מצבר · צומת גולני, 02:40</span><span>• חילוץ רכב מהחול · חוף ניצנים</span><span>• פתיחת דלת טרוקה · ירושלים</span><span>• סיוע בדלק · כביש 90</span><span>• פנצ'ר בכביש 6: מתנדב הגיע תוך 8 דקות</span><span>• חילוץ ילדה שננעלה ברכב · פתח תקווה</span><span>• טעינת מצבר · צומת גולני, 02:40</span><span>• חילוץ רכב מהחול · חוף ניצנים</span><span>• פתיחת דלת טרוקה · ירושלים</span><span>• סיוע בדלק · כביש 90</span></div></section>
+<section class="ticker" aria-label="עדכונים אחרונים מהשטח">
+  <div class="ticker-track">
+    <div class="ticker-group"><span>תקר בכביש 6 · מתנדב הגיע בתוך 8 דקות</span><span>חילוץ ילדה מרכב נעול · פתח תקווה</span><span>הנעת מצבר · צומת גולני · 02:40</span><span>חילוץ רכב מהחול · חוף ניצנים</span><span>פתיחת רכב נעול · ירושלים</span><span>סיוע בדלק · כביש 90</span></div>
+    <div class="ticker-group" aria-hidden="true"><span>תקר בכביש 6 · מתנדב הגיע בתוך 8 דקות</span><span>חילוץ ילדה מרכב נעול · פתח תקווה</span><span>הנעת מצבר · צומת גולני · 02:40</span><span>חילוץ רכב מהחול · חוף ניצנים</span><span>פתיחת רכב נעול · ירושלים</span><span>סיוע בדלק · כביש 90</span></div>
+  </div>
+</section>
 
 <section class="container split">
   <div class="reveal">
@@ -152,16 +160,14 @@
       <p class="oct-mark">7.10<small>לא שוכחים · לא מוותרים</small></p>
       <h2 class="light">הנצחה שהופכת לעשייה</h2>
       <p class="light-text">הארגון הוקם לא רק כדי לסייע לנהגים, אלא גם כדי להנציח את זכרם של הנרצחים והחטופים של השבעה באוקטובר. כל מתנדב שיוצא בלילה לכביש חשוך, כל גלגל שמוחלף בגשם, כל דלת שנפתחת כדי לחלץ ילד – כל אלה הם המשך של אור שניסו לכבות.</p>
-      <p class="gold quote">„כל המציל נפש אחת מישראל – כאילו קיים עולם מלא"</p>
+      <blockquote class="gold quote quote-accent">כל המציל נפש אחת מישראל כאילו קיים עולם מלא</blockquote>
       <div class="hero-actions">
         <a class="btn btn-primary" href="memorial.html#candle">הדליקו נר לזכרם</a>
         <a class="btn btn-ghost-light" href="memorial.html">לעמוד ההנצחה</a>
       </div>
     </div>
-    <!-- להחלפה בתמונת החטופים כשתתקבל: החליפו רק את ה-src ואת ה-alt -->
     <figure class="oct-figure reveal">
-      <span class="oct-badge">7.10</span>
-      <img src="assets/memorial-flag.jpg" alt="דגל ישראל ונר זיכרון לזכר נרצחי וחטופי השבעה באוקטובר">
+      <img src="assets/memorial-hostages-v2.png" loading="lazy" decoding="async" alt="מיצג הנצחה סמלי למען החטופים ולזכר נרצחי השבעה באוקטובר">
       <figcaption>לזכר הנרצחים ולמען שובם של החטופים</figcaption>
     </figure>
   </div>
@@ -175,7 +181,7 @@
       <figcaption>מתנדב בקריאת לילה · אפוד הארגון</figcaption>
     </figure>
     <div class="reveal">
-      <div class="section-head start"><span class="pill-light">האנשים שלנו</span><h2>מאחורי כל קריאה עומד אדם אחד שאמר „אני יוצא"</h2><p class="light-text">אין לנו גוררים בשכר ואין לנו משמרות. יש לנו מאות אנשים עם אפוד בתא המטען, שמפסיקים את מה שהם עושים ויוצאים לדרך – בלילה, בגשם, בחג, בלי לבקש שקל.</p></div>
+      <div class="section-head start"><span class="pill-light">האנשים שלנו</span><h2>מאחורי כל קריאה עומד אדם אחד שאמר <q>אני יוצא</q></h2><p class="light-text">אין לנו גוררים בשכר ואין לנו משמרות. יש לנו מאות אנשים עם אפוד בתא המטען, שמפסיקים את מה שהם עושים ויוצאים לדרך, בלילה, בגשם, בחג, בלי לבקש שקל.</p></div>
       <div class="hero-actions duo">
         <a class="btn btn-primary" href="volunteer.html">רוצה להתנדב</a>
         <a class="btn btn-ghost-light" href="donate.html">לתרומה</a>
@@ -199,7 +205,20 @@
 
 <section class="band overflow">
   <div class="container"><div class="section-head"><span class="pill">נהגים משתפים</span><h2>הרגע שבו מישהו זר עוצר בשבילכם</h2></div></div>
-  <div class="ticker-track slow"><blockquote class="card quote-card"><p>„נתקעתי עם שני ילדים ברכב בצד כביש 38. תוך 9 דקות הגיע מתנדב, החליף גלגל ולא הסכים לקבל שקל. פשוט מלאכים."</p><footer>רחלי, בית שמש</footer></blockquote><blockquote class="card quote-card"><p>„המפתחות ננעלו בפנים עם התינוקת בתוך הרכב. המוקד הרגיע אותי בטלפון והכונן פתח את הדלת בלי שריטה אחת."</p><footer>דוד, אשדוד</footer></blockquote><blockquote class="card quote-card"><p>„המצבר מת בשלוש לפנות בוקר בגליל. חשבתי שאין סיכוי – והם באמת הגיעו. יש עוד טוב בעולם."</p><footer>משה, צפת</footer></blockquote><blockquote class="card quote-card"><p>„שקעתי בחול בדרך למכתש. מתנדב עם ג'יפ וכבל חילוץ הוציא אותי, וליווה אותי עד לכביש הראשי."</p><footer>נועה, באר שבע</footer></blockquote><blockquote class="card quote-card"><p>„נתקעתי עם שני ילדים ברכב בצד כביש 38. תוך 9 דקות הגיע מתנדב, החליף גלגל ולא הסכים לקבל שקל. פשוט מלאכים."</p><footer>רחלי, בית שמש</footer></blockquote><blockquote class="card quote-card"><p>„המפתחות ננעלו בפנים עם התינוקת בתוך הרכב. המוקד הרגיע אותי בטלפון והכונן פתח את הדלת בלי שריטה אחת."</p><footer>דוד, אשדוד</footer></blockquote><blockquote class="card quote-card"><p>„המצבר מת בשלוש לפנות בוקר בגליל. חשבתי שאין סיכוי – והם באמת הגיעו. יש עוד טוב בעולם."</p><footer>משה, צפת</footer></blockquote><blockquote class="card quote-card"><p>„שקעתי בחול בדרך למכתש. מתנדב עם ג'יפ וכבל חילוץ הוציא אותי, וליווה אותי עד לכביש הראשי."</p><footer>נועה, באר שבע</footer></blockquote></div>
+  <div class="ticker-track slow">
+    <div class="testimonial-group">
+      <blockquote class="card quote-card"><p>נתקעתי עם שני ילדים ברכב בצד כביש 38. תוך 9 דקות הגיע מתנדב, החליף גלגל ולא הסכים לקבל שקל. פשוט מלאכים.</p><footer>רחלי, בית שמש</footer></blockquote>
+      <blockquote class="card quote-card"><p>המפתחות ננעלו בפנים עם התינוקת בתוך הרכב. המוקד הרגיע אותי בטלפון והכונן פתח את הדלת בלי שריטה אחת.</p><footer>דוד, אשדוד</footer></blockquote>
+      <blockquote class="card quote-card"><p>המצבר מת בשלוש לפנות בוקר בגליל. חשבתי שאין סיכוי, והם באמת הגיעו. יש עוד טוב בעולם.</p><footer>משה, צפת</footer></blockquote>
+      <blockquote class="card quote-card"><p>שקעתי בחול בדרך למכתש. מתנדב עם ג'יפ וכבל חילוץ הוציא אותי וליווה אותי עד לכביש הראשי.</p><footer>נועה, באר שבע</footer></blockquote>
+    </div>
+    <div class="testimonial-group" aria-hidden="true">
+      <blockquote class="card quote-card"><p>נתקעתי עם שני ילדים ברכב בצד כביש 38. תוך 9 דקות הגיע מתנדב, החליף גלגל ולא הסכים לקבל שקל. פשוט מלאכים.</p><footer>רחלי, בית שמש</footer></blockquote>
+      <blockquote class="card quote-card"><p>המפתחות ננעלו בפנים עם התינוקת בתוך הרכב. המוקד הרגיע אותי בטלפון והכונן פתח את הדלת בלי שריטה אחת.</p><footer>דוד, אשדוד</footer></blockquote>
+      <blockquote class="card quote-card"><p>המצבר מת בשלוש לפנות בוקר בגליל. חשבתי שאין סיכוי, והם באמת הגיעו. יש עוד טוב בעולם.</p><footer>משה, צפת</footer></blockquote>
+      <blockquote class="card quote-card"><p>שקעתי בחול בדרך למכתש. מתנדב עם ג'יפ וכבל חילוץ הוציא אותי וליווה אותי עד לכביש הראשי.</p><footer>נועה, באר שבע</footer></blockquote>
+    </div>
+  </div>
 </section>
 
 <section class="container narrow">
@@ -262,6 +281,6 @@
 <a class="floating-call" href="tel:*8237"><span class="pulse"></span>סיוע עכשיו *8237</a>
 <script src="js/branches.js"></script>
 <script src="js/news.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20260827-4"></script>
 </body>
 </html>
